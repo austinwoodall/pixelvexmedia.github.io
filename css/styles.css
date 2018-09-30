@@ -88,7 +88,8 @@ label a {
   text-decoration: none; }
 
 .logo {
-  margin-left: 20px;
+  margin-top: -20px;
+  margin-left: 25px;
   color: #fff; }
   .logo h4 {
     font-size: 25px;
