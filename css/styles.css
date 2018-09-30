@@ -172,3 +172,26 @@ header {
         float: left; }
       .services .features .container .float-right {
         float: right; }
+
+.idea {
+  text-align: center;
+  width: 100%; }
+  .idea h1 {
+    color: #517df5;
+    font-size: 40px;
+    font-weight: 200; }
+  .idea p {
+    color: #cccbcb; }
+  .idea input {
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    padding-left: 10px;
+    margin-right: 20px; }
+  .idea .email-btn {
+    background: #6c44ff;
+    width: 70px;
+    height: 35px;
+    border: none;
+    border-radius: 50px; }
