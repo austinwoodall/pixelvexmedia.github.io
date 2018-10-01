@@ -14,7 +14,8 @@ body {
   overflow-x: hidden; }
 
 label .menu {
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   right: -100px;
   top: -100px;
   z-index: 100;
@@ -72,7 +73,7 @@ label input[type=checkbox]:checked ~ header {
 
 label ul {
   z-index: 200;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -123,27 +124,39 @@ header {
       text-decoration: none;
       color: #fff; }
 
+.hr-line {
+  width: 100px;
+  height: 2px;
+  background: #517df5;
+  border-radius: 5px;
+  margin: auto; }
+
 .hero-image {
   float: right;
   margin-right: 0; }
   .hero-image img {
     height: 700px; }
 
+.about {
+  text-align: center;
+  width: 100%;
+  height: 400px; }
+  .about h1 {
+    margin: 0;
+    padding: 0;
+    color: #517df5;
+    font-size: 40px;
+    font-weight: 200; }
+
 .services {
   margin: auto;
   width: 100%;
   height: 1800px;
   color: #cccbcb; }
-  .services .hr-line {
-    width: 150px;
-    height: 2px;
-    background: #517df5;
-    border-radius: 5px;
-    margin: auto; }
   .services h1 {
     margin: 0;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 200;
     color: #517df5; }
   .services .features {
@@ -157,12 +170,12 @@ header {
       height: 400px;
       width: 1000px;
       font-size: 30px;
-      text-align: center;
+      text-align: left;
       border-radius: 10px; }
       .services .features .container .container-text {
         margin-top: 100px; }
         .services .features .container .container-text h4 {
-          font-weight: 400;
+          font-weight: 300;
           color: #517df5; }
         .services .features .container .container-text p {
           font-weight: 100; }
@@ -175,23 +188,122 @@ header {
 
 .idea {
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  height: 250px; }
   .idea h1 {
     color: #517df5;
     font-size: 40px;
-    font-weight: 200; }
+    font-weight: 200;
+    margin: 0;
+    padding: 0; }
   .idea p {
+    margin-top: 0;
     color: #cccbcb; }
   .idea input {
     width: 250px;
     height: 35px;
     border: none;
+    font-size: 16px;
     border-radius: 50px;
     padding-left: 10px;
     margin-right: 20px; }
   .idea .email-btn {
     background: #6c44ff;
+    color: #fff;
+    font-size: 20px;
     width: 70px;
     height: 35px;
     border: none;
     border-radius: 50px; }
+
+.portfolio {
+  text-align: center;
+  width: 100%; }
+  .portfolio h1 {
+    color: #517df5;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0;
+    padding: 0; }
+  .portfolio p {
+    color: #cccbcb; }
+
+.contact {
+  text-align: center;
+  height: 450px; }
+  .contact h1 {
+    color: #517df5;
+    font-size: 40px;
+    font-weight: 200; }
+  .contact form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto; }
+    .contact form .id {
+      display: flex;
+      flex-direction: row;
+      align-content: space-around;
+      margin: 0 auto; }
+    .contact form .name,
+    .contact form .email {
+      display: inline-block;
+      width: 250px;
+      height: 35px;
+      padding-left: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px; }
+    .contact form .options {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto; }
+    .contact form select {
+      display: inline-block;
+      width: 250px;
+      height: 35px;
+      margin: 10px;
+      border: none; }
+    .contact form .text-area {
+      width: 520px;
+      height: 100px;
+      margin: 0 auto;
+      border: none;
+      padding-left: 10px;
+      padding-top: 15px;
+      border-radius: 5px;
+      display: block; }
+    .contact form input[type=button] {
+      background: #517df5;
+      color: #fff;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+      height: 40px;
+      margin-top: 20px;
+      font-weight: 200; }
+
+footer {
+  display: flex;
+  height: 60px;
+  color: #fff;
+  width: 100%;
+  background: #517df5; }
+  footer p {
+    display: inline;
+    margin: auto; }
+  footer .social-media {
+    display: flex;
+    display: inline;
+    margin: auto;
+    align-content: center;
+    justify-content: space-between; }
+    footer .social-media a {
+      margin: 0 10px;
+      color: #f2f2f2;
+      font-size: 25px;
+      text-decoration: none; }
+  footer a {
+    color: #f2f2f2;
+    margin: auto; }
