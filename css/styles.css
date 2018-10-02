@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:100,200,300,400,500");
+@media screen and (min-device-width: 320px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+  .logo {
+    margin-top: -20px;
+    margin-left: 25px;
+    color: #fff; }
+    .logo h4 {
+      font-size: 22px;
+      font-weight: 100; }
+      .logo h4 span {
+        font-weight: 500; } }
+
 *,
 *:before,
 *:after {
